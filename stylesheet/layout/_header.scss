@@ -2,11 +2,7 @@ header{
 	background: $firstcolor;
 	padding: 0;
 	flex-shrink: 0;
-	position: fixed;
 	display: block;
-	top: 0;
-	left: 0;
-	right: 0;
 	z-index: 30;
 }
 header .container{

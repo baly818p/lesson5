@@ -1,12 +1,8 @@
-
-
 $(document).ready(function(){
   $('.bxslider').bxSlider({
   	auto: true,
   	
   });
-});
-$(document).ready(function(){
   $('.slider2').bxSlider({
     slideWidth: 220,
     minSlides: 4,
@@ -16,3 +12,8 @@ $(document).ready(function(){
   });
 });
 
+$(window).load(function(){
+  $('.scroll-content').fullpage({
+
+  });
+});

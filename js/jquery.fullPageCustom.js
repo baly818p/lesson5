@@ -384,7 +384,9 @@
 			isResizing = true;
 
 			var windowsWidth = $window.outerWidth();
-			windowsHeight = $('.scroll-part-holder').innerHeight();  //updating global var
+			windowsHeight = $('.scroll-part-holder').height();  //updating global var
+
+			console.log(windowsHeight);
 
 			//text resizing
 			if (options.resize) {
@@ -604,8 +606,11 @@
 			$('html').addClass(ENABLED);
 
 			//due to https://github.com/alvarotrigo/fullPage.js/issues/1502
-			windowsHeight = $('.scroll-part-holder').innerHeight();
-
+			
+			setTimeout(function(){
+				windowsHeight = $('.scroll-part-holder').height();
+			}, 15);
+			
 			container.removeClass(DESTROYED); //in case it was destroyed before initilizing it again
 
 			addInternalSelectors();
