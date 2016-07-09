@@ -1,0 +1,21 @@
+body{
+  font: 400 16px/1.1 'PT Sans', sans-serif;
+}
+.wrapper{
+	background: #f6f6f6;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container{
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
